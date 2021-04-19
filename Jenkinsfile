@@ -5,11 +5,11 @@ pipeline {
             steps {
                 sh 'terraform init'
             }
+            }
             stage("TerraformPLAN"){
               steps {
                 sh 'terraform plan'
               }
-            }    
         }
     }
 }
